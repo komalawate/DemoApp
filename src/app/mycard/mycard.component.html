@@ -1,0 +1,21 @@
+<!-- <div class="card h-100">
+    <img src="{{product.picture}}" class="card-img-top" alt="picture" style="width: 500;height:500px;"/>
+    <div class="card-body" style="text-align: center;">
+        <h5 class="card-title">{{product.title}}</h5>
+        <hr/>
+        <p class="card-text">Status: {{product.status}}</p>
+        <p class="card-text">No.of Episodes: {{product.episodes}}</p>
+    </div>
+</div>
+<! <div > -->
+
+<ion-card style="height: 500px;">
+    <ion-img alt="picture" src="{{product.picture}}" style="width: 450px;; height: 300px;" />
+    <ion-card-header>
+      <ion-card-title >{{product.title}}</ion-card-title>
+      <ion-card-subtitle>{{product.status}}</ion-card-subtitle>
+    </ion-card-header>  
+    <ion-card-content>
+        No.of Episodes: {{product.episodes}}
+    </ion-card-content>
+  </ion-card>

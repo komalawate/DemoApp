@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-12 d-flex justify-content-center">
+        <div class="col-md-12 d-flex justify-content-center">
+            <div class="btn-group flot-right">
+                <div>
+                    <ion-button  (click)="getPrev()"  [disabled]="selectedPage==1" > << </ion-button>
+                    <ion-button  (click)="prevPage()" [disabled]="selectedPage==1"[disabled]="selectedPage==pages[0]"> < </ion-button>
+                    <ion-button  *ngFor="let page of pageNumbers"  [disabled]="selectedPage==page" (click)="changePage(page)">{{page}}</ion-button>
+                    <ion-button (click)="nextPage()" [disabled]="selectedPage==count"> > </ion-button>
+                    <ion-button  (click)="getNext()"[disabled]="selectedPage==count"> >> </ion-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    

@@ -1,0 +1,15 @@
+<div>Episodes
+<ion-range [dualKnobs]="true" max="3057" min="1" [(ngModel)]="value" (ionKnobMoveEnd)="getValue($event)" [pin]="true"></ion-range>
+<ion-row>
+    <!-- <ion-col>
+        <ion-label>{{value.lower}}</ion-label>
+    </ion-col>
+    <ion-col>
+        <ion-label>{{value.upper}}</ion-label>
+    </ion-col> -->
+</ion-row> </div>
+Status
+<ion-item *ngFor="let d of status">
+    <ion-checkbox slot="start" [value]="d.name" (ionChange)="checkValue($event)"></ion-checkbox>
+    <ion-label>{{d.name}}</ion-label>
+</ion-item>
